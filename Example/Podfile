@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TSLObjective_Example' do
+  pod 'TSLObjective', :path => '../'
+
+  target 'TSLObjective_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

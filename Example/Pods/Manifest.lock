@@ -1,0 +1,16 @@
+PODS:
+  - TSLObjective (0.1.0)
+
+DEPENDENCIES:
+  - TSLObjective (from `../`)
+
+EXTERNAL SOURCES:
+  TSLObjective:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TSLObjective: 7b28905169c9c4ea17e9092cce7a4ae593b6d463
+
+PODFILE CHECKSUM: a31b5b63ce6b2631fc1dd0e6f67da294d9c4ec04
+
+COCOAPODS: 1.11.3

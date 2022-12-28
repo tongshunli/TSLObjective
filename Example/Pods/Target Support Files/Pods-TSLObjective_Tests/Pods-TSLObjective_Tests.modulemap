@@ -1,0 +1,6 @@
+framework module Pods_TSLObjective_Tests {
+  umbrella header "Pods-TSLObjective_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

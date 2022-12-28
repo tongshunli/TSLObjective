@@ -1,0 +1,22 @@
+{
+  "name": "TSLObjective",
+  "version": "0.1.0",
+  "summary": "A short description of TSLObjective.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tongshunli/TSLObjective",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tongshunli": "13466621196@163.com"
+  },
+  "source": {
+    "git": "https://github.com/tongshunli/TSLObjective.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "TSLObjective/Classes/**/*"
+}

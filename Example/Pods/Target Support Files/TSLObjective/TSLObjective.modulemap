@@ -1,0 +1,6 @@
+framework module TSLObjective {
+  umbrella header "TSLObjective-umbrella.h"
+
+  export *
+  module * { export * }
+}
