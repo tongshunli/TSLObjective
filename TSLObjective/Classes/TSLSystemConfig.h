@@ -9,6 +9,7 @@
 #define TSLSystemConfig_h
 
 #import "TSLViewHelper.h"
+#import "TSLFrameDefine.h"
 
 #define kDocumentPath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)
 
@@ -36,7 +37,7 @@
 
 #define kIsIpad [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? YES : NO // ipad设备
 
-#define kIsIphoneX (abs(MAX(kScreenWidth, kScreenHeight) / MIN(kScreenWidth, kScreenHeight) - 896 / 414 < 0.01) || abs(MAX(kScreenWidth, kScreenHeight) / MIN(kScreenWidth, kScreenHeight) - 812 / 375 < 0.01))
+#define kIsIphoneX (fabs(MAX(kScreenWidth, kScreenHeight) / MIN(kScreenWidth, kScreenHeight) - 896.0 / 414.0) < 0.01 || fabs(MAX(kScreenWidth, kScreenHeight) / MIN(kScreenWidth, kScreenHeight) - 812.0 / 375.0) < 0.01)
 
 #define kIsDarkMode [TSLViewHelper getDarkMode]
 
