@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "TSLBatteryView.h"
+#import "TSLColorConfig.h"
+#import "TSLCustomButton.h"
+#import "TSLObjective.h"
+#import "TSLUIFactory.h"
 
 FOUNDATION_EXPORT double TSLObjectiveVersionNumber;
 FOUNDATION_EXPORT const unsigned char TSLObjectiveVersionString[];

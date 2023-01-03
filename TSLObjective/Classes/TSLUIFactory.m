@@ -7,6 +7,8 @@
 
 #import "TSLUIFactory.h"
 
+#import "TSLFrameDefine.h"
+
 @implementation TSLUIFactory
 
 + (UIView *)view {
@@ -19,6 +21,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.font = textFont;
     label.textColor = textColor;
+    label.preferredMaxLayoutWidth = kScreenWidth;
     return label;
 }
 
@@ -41,6 +44,7 @@
     UIButton *button = [TSLUIFactory button:target withSelector:selector];
     [button.titleLabel setFont:textFont];
     [button setTitleColor:textColor forState:UIControlStateNormal];
+    button.titleLabel.preferredMaxLayoutWidth = kScreenWidth;
     return button;
 }
 
