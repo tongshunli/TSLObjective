@@ -23,5 +23,6 @@
 #import "UIColor+TSLExtension.h"
 #import "UIImage+TSLExtension.h"
 #import "UILabel+TSLExtension.h"
+#import "NSString+TSLExtension.h"
 
 #endif /* TSLObjective_h */

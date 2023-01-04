@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - TSLObjective (0.1.0):
+  - TSLObjective (0.1.2):
     - Masonry
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  TSLObjective: 7bfbe5d0cd2be137e20196f2c6999dca50ea7a5a
+  TSLObjective: ff3044c8d95af58cc30ed82ae04c03ab7a14e920
 
 PODFILE CHECKSUM: a31b5b63ce6b2631fc1dd0e6f67da294d9c4ec04
 

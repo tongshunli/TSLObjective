@@ -1,6 +1,6 @@
 {
   "name": "TSLObjective",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "Common methods of Objective-C and macro definition encapsulation.",
   "description": "Common methods and UI controls are encapsulated to facilitate external calls",
   "homepage": "https://github.com/tongshunli/TSLObjective",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/tongshunli/TSLObjective.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "11.0"
