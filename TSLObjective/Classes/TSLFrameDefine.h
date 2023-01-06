@@ -24,11 +24,11 @@
 
 #define kLineHeight 0.5
 
-#define kStatusBarHeight kIsIphoneX ? 44.0 : 20.0
+#define kStatusBarHeight (kIsIphoneX ? 44.0 : 20.0)
 
-#define kNavbarHeight kIsIphoneX ? 88.0 : 64.0
+#define kNavbarHeight (kIsIphoneX ? 88.0 : 64.0)
 
-#define kTabbarHeight kIsIphoneX ? 83.0 : 49.0
+#define kTabbarHeight (kIsIphoneX ? 83.0 : 49.0)
 
 #define kAnimatedDuration 0.4 // 动画时长
 

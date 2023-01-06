@@ -6,6 +6,7 @@
 //
 
 #import "TSLViewHelper.h"
+#import "TSLSystemConfig.h"
 
 @implementation TSLViewHelper
 
@@ -220,6 +221,34 @@
     
     return [NSString stringWithFormat:@"data:%@;base64,%@", mimeType,
             [imageData base64EncodedStringWithOptions: 0]];
+}
+
+#pragma mark - 暗黑状态
++ (BOOL)getDarkMode {
+    if (@available(iOS 13.0, *)) {
+        return [[UITraitCollection currentTraitCollection] userInterfaceStyle] == UIUserInterfaceStyleDark;
+    }
+    return NO;
+}
+
+#pragma mark - 白色导航栏
++ (void)setStateBarLightStyle {
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+#pragma mark - 黑色导航栏
++ (void)setStateBarDefaultStyle {
+    if ([self getDarkMode]) {
+        [self setStateBarLightStyle];
+    } else {
+        [UIApplication sharedApplication].statusBarHidden = NO;
+        if (@available(iOS 13.0, *)) {
+            [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDarkContent;
+        } else {
+            [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+        }
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.

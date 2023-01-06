@@ -23,6 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)setCornerWithLeftTopCorner:(CGFloat)leftTop withRightTop:(CGFloat)rightTop withBottemLeft:(CGFloat)bottemLeft withBottemRight:(CGFloat)bottemRight withView:(UIView *)view withFrame:(CGRect)frame;
 
++ (BOOL)getDarkMode;
+
++ (void)setStateBarLightStyle;
+
++ (void)setStateBarDefaultStyle;
+
 @end
 
 NS_ASSUME_NONNULL_END
