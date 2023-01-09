@@ -43,15 +43,15 @@
     UIViewController *result = [TSLViewHelper getWindow].rootViewController;
     
     while (result.presentedViewController != nil) {
-        return result.presentedViewController;
+        result = result.presentedViewController;
     }
     
     if ([result isKindOfClass:UITabBarController.class]) {
-        return [(UITabBarController *)result selectedViewController];
+        result = [(UITabBarController *)result selectedViewController];
     }
     
     if ([result isKindOfClass:UINavigationController.class]) {
-        return [(UINavigationController *)result visibleViewController];
+        result = [(UINavigationController *)result visibleViewController];
     }
     
     return result;

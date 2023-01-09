@@ -12,6 +12,7 @@
 #import "TSLFrameDefine.h"
 
 #import "NSBundle+TSLExtension.h"
+#import "UILabel+TSLExtension.h"
 
 @implementation TSLTopAlertView
 
@@ -69,7 +70,8 @@
 - (UILabel *)alertTitleLabel {
     if (_alertTitleLabel == nil) {
         _alertTitleLabel = [TSLUIFactory label:kFont(14) withTextColor:[UIColor blackColor]];
-        _alertTitleLabel.frame = CGRectMake(50, kNavbarHeight - 37, kScreenWidth - 60.0, 30.0);
+        _alertTitleLabel.numberOfLines = 0;
+        _alertTitleLabel.preferredMaxLayoutWidth = kScreenWidth - 60.0;
     }
     return _alertTitleLabel;
 }
@@ -100,6 +102,8 @@
     _alertTitle = alertTitle;
     
     self.alertTitleLabel.text = alertTitle;
+    self.alertTitleLabel.frame = CGRectMake(50, kNavbarHeight - 37, kScreenWidth - 60.0, self.alertTitleLabel.textHeight);
+
 }
 
 - (void)setAlertType:(TSLTopAlertType)alertType {
